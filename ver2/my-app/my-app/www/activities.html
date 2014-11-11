@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		
+		<!--Custom Theme-->
+	    <link rel="stylesheet" href="css/themes/exerciseIT.css" />
+	    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> 
+	    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		
+		<!--Datebox-->
+		<link rel="stylesheet" href="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.min.css" />
+		<link type="text/css" href="css/demos.css" rel="stylesheet" />
+		<!-- NOTE: Script load order is significant! -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/external/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/jQM-DateBox/js/doc.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.core.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.calbox.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.datebox.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.flipbox.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.slidebox.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.customflip.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jtsage.com/datebox/i18n/jqm-datebox.lang.utf8.js"></script>
+		<script type="text/javascript">
+		jQuery.extend(jQuery.mobile,
+		{
+		  ajaxEnabled: false
+		});
+		</script>
+		
+        <!--jQueryMobile Framework-->
+        <script src="js/jquery-mobile.js"></script>
+        <title>ExerciseIT</title>
+    </head>  
+	
+    <body>
+	
+	<div id="dialog-overlay"></div>
+	<div id="dialog-box">
+		<div class="dialog-content">
+			<div id="dialog-message"></div>
+			<a href="#" class="button">Close</a>
+		</div>
+	</div>
+	
+	<!-------------------------------------------------------------------->
+	<!----------------ACTIVITY 2--------------->
+	<!-------------------------------------------------------------------->
+	
+	<div data-role="page" id="activity2">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="exerciseIT.html#homePage" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true">
+					<li style="background-color:#FDF8F8;font-size:125%;">
+						<center><text style="text-align:center;font-family:glypha;font-size:250%;">Let's Play Soccer!</text><br>		
+						<text style="text-align:center;font-size:150%;">Soccer</text></center>
+						<p style="left-padding:10%;">
+						<b>Date:</b> 26 Sep 2014 <b><br>Start Time: </b>05:00 PM<br>
+						<b>Venue:</b> Serangoon</b><br>
+						<b>Notes:</b> Soccceeeerrrrrrr<br>
+						<b>Participant: </b>You, <a href="friends.html#doge" rel="external">Doge</a><br>
+						<b>Open to Public: </b> Yes
+						</p>
+						<table align="center">
+						<tr>
+						<td>
+							<button id="" style="background-color:#d2dfe3"class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left">Edit</button>
+						</td>
+						<td>
+							<button id="" style="background-color:#d2dfe3" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left">Delete</button>
+						</td>
+						</tr>
+						</table>
+					</li>
+				</ul>
+				
+				<p id="request">
+					<table style="padding-left:2%" align=center>
+					<tr><td>
+						<a href="friends.html#bibleThumpActivity2" rel="external" style="width: 10em;">BibleThump</a> has requested to join</td><td>     </td><td>
+						<a href="#" id="approval" class="ui-btn ui-corner-all ui-shadow" style="background-color:#3CE22B; width: 5em;  height: 1em;">Approve</a></td><td>
+						<a href="#" class="ui-btn ui-corner-all ui-shadow" style="background-color:#E83521; width: 4em;  height: 1em;">Reject</a></td>
+					</tr>
+					</table>
+				<p>
+				
+				<ul data-role="listview" data-inset="true" style="left-padding: 10%;">
+				<li style="background-color:#FDF8F8;">
+					<b>BibleThump:</b> I am a newbie in soccer, but I want to join!
+				</li>
+				</ul>
+				
+				<footer style="padding:2%">
+					<b>Leave a comment:</b>
+					<form>
+						<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+					<pre id="result2"></pre>
+						<input type="submit" data-inline="false" value="Submit" data-mini="true" class="ui-btn-right" data-theme="a">
+					</form>
+					</footer>
+		</div>
+	</div>
+	
+	<!-------------------------------------------------------->
+	
+	<div data-role="page" id="activity2Doge">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="friends.html#friend1Page" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true">
+					<li style="background-color:#FDF8F8;font-size:125%;">
+						<center><text style="text-align:center;font-family:glypha;font-size:250%;">Let's Play Soccer!</text><br>			
+						<text style="text-align:center;font-size:150%;">Soccer</text></center>
+						<p style="left-padding:10%;">
+						<b>Date:</b> 26 Sep 2014 <b><br>Start Time: </b>05:00 PM<br>
+						<b>Venue:</b> Serangoon</b><br>
+						<b>Notes:</b> Soccceeeerrrrrrr<br>
+						<b>Participant: </b>You, <a href="friends.html#doge" rel="external">Doge</a><br>
+						<b>Open to Public: </b> Yes
+						</p>
+						<table align="center">
+						<tr>
+						<td>
+							<button id="" style="background-color:#d2dfe3"class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left">Edit</button>
+						</td>
+						<td>
+							<button id="" style="background-color:#d2dfe3" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left">Delete</button>
+						</td>
+						</tr>
+						</table>
+					</li>
+				</ul>
+				
+				<footer style="padding:2%">
+				<b>Leave a comment:</b>
+				<form>
+					<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+				<pre id="result2"></pre>
+					<input type="submit" data-inline="false" value="Submit" data-mini="true" class="ui-btn-right" data-theme="a">
+				</form>
+				</footer>
+		</div>
+	</div>
+	
+	<!----------------------------------------------------------->
+	
+	<div data-role="page" id="activity1">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="exerciseIT.html#homePage" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li style="background-color:#FDF8F8;font-size:125%;">
+					<center><text style="text-align:center;font-family:glypha;font-size:250%;">Morning Run</text><br>
+					<text style="text-align:center;font-size:150%;">Running</text></center>
+					<p style="left-padding:10%;">
+					<b>Date:</b> 29 Sep 2014 <b><br>Start Time: </b>08:30 AM<br>
+					<b>Venue:</b> Kallang Stadium</b><br>
+					<b>Notes:</b> First time running in the morning!<br>
+					<b>Open to Public: </b> No
+					</p>
+					<table align="center">
+					<tr>
+					<td>
+						<button id="" style="background-color:#d2dfe3"class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left">Edit</button>
+					</td>
+					<td>
+						<button id="" style="background-color:#d2dfe3" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left">Delete</button>
+					</td>
+					</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!---------------------------------------------------->
+	<!-------------------Activity 3-Notifications----------------------->
+	<!---------------------------------------------------->
+	
+	<div data-role="page" id="activity3N">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="exerciseIT.html#notifications" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li style="background-color:#FDF8F8;font-size:125%;">
+					<center><text style="text-align:center;font-family:glypha;font-size:215%;">Everything is Awesome!</text><br>
+					<text style="text-align:center;font-size:150%;">Others</text></center>
+					<p style="left-padding:10%;">
+					<b>Date:</b> 7 Nov 2014 <b><br>Start Time: </b>4:30 PM<br>
+					<b>Venue:</b> SMU Campus Green</b><br>
+					<b>Notes:</b> Join us to try out various outdoor sports!<br>
+					<b>Open to Public: </b> Yes
+					</p>
+					<table align="center">
+					<tr>
+					<td>
+						<button id="" style="background-color:#d2dfe3"class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left">Edit</button>
+					</td>
+					<td>
+						<button id="" style="background-color:#d2dfe3" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left">Delete</button>
+					</td>
+					</tr>
+					</table>
+				</li>
+			</ul>
+			<a class="join2 ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" value="Request to join">Request to join</a>
+			<script>
+			$('.join2').click(function(){
+					var lol = 0;
+					var $this = $(this);
+					$this.toggleClass('join');
+					if($this.hasClass('.join2')){
+						$this.text('Request to join');			
+					}else if($this.text()=='Request sent'){
+						if (confirm("Do you want to cancel join?") == true) {
+					        $this.text('Request to join');
+					    } else {
+					        $this.text('Request sent');
+					    }
+					}else{
+						$this.text('Request sent');
+					}
+				});
+			</script>
+			
+			<footer style="padding:2%">
+			<b>Leave a comment:</b>
+			<form>
+				<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+			<pre id="result2"></pre>
+				<input type="submit" data-inline="false" value="Submit" data-mini="true" class="ui-btn-right" data-theme="a">
+			</form>
+			</footer>
+		</div>		
+	</div>
+	
+	
+	<!--------------------------------------------->
+	<!--EXPLORE-->
+	<!--------------------------------------------->
+	
+	<!---------------------------------------------------->
+	<!-------------------Activity 3----------------------->
+	<!---------------------------------------------------->
+	
+	<div data-role="page" id="activity3">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="exerciseIT.html#explore" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li style="background-color:#FDF8F8;font-size:125%;">
+					<center><text style="text-align:center;font-family:glypha;font-size:215%;">Everything is Awesome!</text><br>
+					<text style="text-align:center;font-size:150%;">Others</text></center>
+					<p style="left-padding:10%;">
+					<b>Date:</b> 7 Nov 2014 <b><br>Start Time: </b>4:30 PM<br>
+					<b>Venue:</b> SMU Campus Green</b><br>
+					<b>Notes:</b> Join us to try out various outdoor sports!<br>
+					<b>Open to Public: </b> Yes
+					</p>
+					<p>
+					<b>Host: </b><a href="friends.html#bibleThumpActivity3" rel="external">BibleThump</a>
+					</p>
+				</li>
+			</ul>
+			
+			<a class="join2 ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" value="Request to join">Request to join</a>
+
+			<footer style="padding:2%">
+			<b>Leave a comment:</b>
+			<form>
+				<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+			<pre id="result2"></pre>
+				<input type="submit" data-inline="false" value="Submit" data-mini="true" class="ui-btn-right" data-theme="a">
+			</form>
+			</footer>
+			
+			<script>
+			$('.join2').click(function(){
+					var lol = 0;
+					var $this = $(this);
+					$this.toggleClass('join');
+					if($this.hasClass('.join2')){
+						$this.text('Request to join');			
+					}else if($this.text()=='Request sent'){
+						if (confirm("Do you want to cancel join?") == true) {
+					        $this.text('Request to join');
+					    } else {
+					        $this.text('Request sent');
+					    }
+					}else{
+						$this.text('Request sent');
+					}
+				});
+			</script>
+		</div>		
+	</div>
+	
+	<!---------------------------------------------------->
+	<!--------------------ACTIVITY 4---------------------->
+	<!---------------------------------------------------->
+	<div data-role="page" id="activity4">
+		<div data-role="header" data-theme="a" data-position-fixed="true">
+            <a href="exerciseIT.html#explore" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <h3>Activity Details</h3>
+        </div>
+		
+		<!--Activity Details-->
+	
+		<div data-role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li style="background-color:#FDF8F8;font-size:125%;">
+					<center><text style="text-align:center;font-family:glypha;font-size:215%;">Play Soccer Bah</text><br>
+					<text style="text-align:center;font-size:150%;">Others</text></center>
+					<p style="left-padding:10%;">
+					<b>Date:</b> 2 Nov 2014 <b><br>Start Time: </b>3:30 PM<br>
+					<b>Venue:</b> Marine Barrage</b><br>
+					<b>Notes:</b> Play soccer is fun! Come join us!<br>
+					<b>Open to Public: </b> Yes
+					</p>
+					<p>
+					<b>Host: </b><a href="friends.html#bibleThumpActivity4" rel="external">BibleThump</a><br>
+					<b>Participant: </b> You
+					</p>
+				</li>
+			</ul>
+			<a class="join3 ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left" style="background-color:#3CE22B">Your request has been approved</a>
+			<!--
+			<script>
+			$('.join3').click(function(){
+					var lol = 0;
+					var $this = $(this);
+					$this.toggleClass('join');
+					if($this.hasClass('.join3')){
+						$this.text('Request to join');			
+					}else if($this.text()=='Request sent'){
+						if (confirm("Do you want to cancel join?") == true) {
+					        $this.text('Request to join');
+					    } else {
+					        $this.text('Request sent');
+					    }
+					}else{
+						$this.text('Request sent');
+					}
+				});
+			</script>
+			-->
+		</div>
+		
+		<footer style="padding:2%">
+		<b>Leave a comment:</b>
+		<form>
+			<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+		<pre id="result2"></pre>
+			<input type="submit" data-inline="false" value="Submit" data-mini="true" class="ui-btn-right" data-theme="a">
+		</form>
+		</footer>
+		
+	</div>
+	
+	
+	
+	<div data-role="page" id="activity5">
+	<div data-role="header" data-theme="a" data-position-fixed="true">
+		<a href="exerciseIT.html#homePage" rel="external" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h3>Activity Details</h3>
+	</div>
+	
+	<!--Activity Details-->
+
+	<div data-role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li style="background-color:#FDF8F8;font-size:125%;">
+					<center><text style="text-align:center;font-family:glypha;font-size:250%;"><span id="activity123Title"></span></text><br>			
+					<text style="text-align:center;font-size:150%;"><span id="activity123Sports"></span></text></center>
+					<p style="left-padding:10%;">
+					<b>Date:</b> <span id="activity123Date"></span> <b><br>Start Time: </b><span id="activity123Time"></span><br>
+					<b>Venue:</b> <span id="activity123Venue"></span></b><br>
+					<b>Notes:</b> <span id="activity123Notes"></span><br>
+					<b>Participant: </b>You, <a href="friends.html#doge" rel="external">Doge</a>, <a href="friends.html#haydunn" rel="external">Haydunn</a><br>
+					<b>Open to Public: </b> <span id="activity123Privacy"></span>
+					</p>
+				</li>
+			</ul>
+			<table align="center">
+			<tr>
+			<td>
+				<button id="editEvent" style="background-color:#d2dfe3"class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left">Edit</button>
+			</td>
+			<td>
+				<button id="deleteEvent" style="background-color:#d2dfe3" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left">Delete</button>
+			</td>
+			</tr>
+			</table>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+$("#deleteEvent").click(function(){
+localStorage.removeItem("activity1");
+window.location = "exerciseIT.html";
+});
+$("#editEvent").click(function(){
+window.location = "exerciseIT.html#editEvent";
+});
+
+});
+
+
+if(localStorage.activity1){
+	newActivity = JSON.parse(localStorage.activity1);
+	$("#lol123123").show();
+	$('#activity123Title').text(newActivity.title);
+	$('#activity123Sports').text(newActivity.sports);
+	$('#activity123Venue').text(newActivity.venue);
+	$('#activity123Date').text(newActivity.date);
+	$('#activity123Time').text(newActivity.time);
+	$('#activity123Notes').text(newActivity.notes);	
+	$('#activity123Privacy').text(newActivity.openEvent);
+}else{
+	$("#lol123123").hide();
+}
+</script>
+
+	
+	</body>
+</html>
